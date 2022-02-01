@@ -13,7 +13,7 @@ router.post('/new', (req,res,next) => {
     title: req.body.title,
     description: req.body.description,
     user: req.body.username,
-    added: new Date().toLocaleDateString()
+    added: new Date().toLocaleString()
   }
   messages.unshift(newMessage);
   res.redirect('/');
