@@ -19,6 +19,19 @@ body {
   background-color: #ff3f05;
 }
 
+.button-add {
+  padding: 1.2em;
+  margin: 0 auto 30px auto;
+
+  border: 1px #ff3f05;
+  border-radius: 10px;
+
+  background-color: white;
+  color: #ff3f05;
+
+  text-decoration: none;
+}
+
 .messages {
   display: flex;
   justify-content: center;
@@ -41,6 +54,7 @@ body {
 
 .top {
   border-bottom: 1px solid #999;
+  margin: .5em;
 }
 
 .bottom {

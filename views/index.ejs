@@ -5,16 +5,17 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <main class='content'>
+    <main>
       <nav class='nav'>
         <h1>Welcome to the message board!</h1>
       </nav>
       <section class='messages'>
+        <a href='/new' class="button-add">Add a new message</a>
         <% messages.forEach(message => { %>
           <div class="container">
             <div class="top">
-              <h2><%= message.text %></h2>
-              <p>Hello</p>
+              <h2><%= message.title %></h2>
+              <p><%= message.description %> </p>
             </div>
             <div class="bottom">
               <h3 class="user"><%= message.user %></h3>
