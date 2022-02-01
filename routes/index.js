@@ -12,7 +12,7 @@ router.post('/new', (req,res,next) => {
   const newMessage = {
     title: req.body.title,
     description: req.body.description,
-    user: req.body.description,
+    user: req.body.username,
     added: new Date().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"})
   }
   messages.unshift(newMessage);
