@@ -1,8 +1,108 @@
+html,
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgb(226, 226, 226);
 }
 
-a {
-  color: #00B7FF;
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 0 50px 0;
+  padding: 30px;
+  color: white;
+
+  background-color: #ff3f05;
+}
+
+.messages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: white;
+
+  display: inherit;
+  flex-direction: column;
+
+  padding: 5px;
+  margin: 1.5em;
+
+  width: 75%;
+}
+
+.top {
+  border-bottom: 1px solid #999;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+
+  margin: .5em;
+}
+
+.bottom h3 {
+  margin: 0;
+}
+
+.top h2 {
+  margin: 0;
+}
+
+
+/*
+
+  FORM TAB STYLING
+
+*/
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+
+  width: 75%;
+}
+
+form :nth-child(1) {
+  flex-basis: 2em;
+  font-size: 24px;
+}
+
+form :nth-child(2) {
+  flex-basis: 12em;
+  resize: none;
+}
+
+form :nth-child(3) {
+  flex-basis: 3em;
+}
+
+.post-button {
+  margin-top: 5px;
+  padding: 10px;
+
+  border: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  background-color: #ff3f05;
+  color: white;
 }

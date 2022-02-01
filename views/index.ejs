@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Message board</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <main class='content'>
+      <nav class='nav'>
+        <h1>Welcome to the message board!</h1>
+      </nav>
+      <section class='messages'>
+        <% messages.forEach(message => { %>
+          <div class="container">
+            <div class="top">
+              <h2><%= message.text %></h2>
+              <p>Hello</p>
+            </div>
+            <div class="bottom">
+              <h3 class="user"><%= message.user %></h3>
+              <span class="date"><%= message.added %></span>
+            </div>
+          </div>
+          <% }); %>
+      </section>
+    </main>
   </body>
 </html>
